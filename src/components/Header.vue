@@ -5,7 +5,8 @@ export default {
   data() {
     return {
       logo:'LOGO',
-      image: 'vue.svg'
+      image: 'vue.svg',
+      image2: 'vite.svg',
     }
   },  
   methods:{
@@ -28,6 +29,8 @@ export default {
         <img src="/vite.svg" alt="public"> 
         <!-- immagine dinamica  -->
         <img :src="getImage(image)" alt="dinamica"> 
+        <!-- immagine dinamica in public  -->
+        <img :src="`/${image2}`" alt="dinamica public"> 
         </a></li>
       <li><a href="#">link</a></li>
       <li><a href="#">link</a></li>
